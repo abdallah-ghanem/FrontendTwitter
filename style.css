@@ -77,13 +77,14 @@ header{
 .main-account{
     width: 100%;
     height: 30%;
-    padding: 180px;
+    padding-top: 185px;/* to make this in this position in bottom */
 }
 .main-account a{
     display: flex;
     justify-content: space-between;
-    padding: 8px 16px 8px 15px;
-    margin-left: 10px;
+    padding: 8px 10px 8px 15px;
+    margin-right: 10px;
+    align-content: center;
 }
 .image{
     border-radius: 50px;
@@ -99,6 +100,52 @@ header{
     font-size: 1.5rem;
     line-height: 20px;
 }
-.main-account:hover{
+.main-account a:hover{
     background-color: rgb(47,51,54);
+    border-radius: 9999px;/* to make the shadow like sylinder */
+}
+.name{
+    font-weight: 500;
+}
+.handel-name{
+    color: rgb(110,118,125);
+}
+.main-account a i{
+    margin-top: 8px;
+}
+
+
+main{
+    width: 71%;/* that remain from the header that take 29 from the page */
+    height: 100%;
+    margin-left: 29%;/* to make margin own by header because i made it fixed */
+}
+.main-flex{
+    display: flex;
+    width: 100%;
+}
+.main-feed{
+    width: 50%;
+    border-left: 1px solid rgb(47,51,54);
+    border-right: 1px solid rgb(47,51,54);
+}
+.home-bar{
+    display: flex;
+    justify-content: space-between;/* to make space equal between element */
+    align-items: center;
+    height: 55px;/* make bar size 55px */
+    width: 100%;/* take all this space  */
+    color: white;
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 0 15px;
+    position: sticky;/* to make home in top position 0 when scroll down */
+    top: 0;/* must write when chose sticky position */
+    background-color: black;
+}
+.new-post{
+    display: flex;/* make this item side each other */
+    width: 100%;
+    height: 120px;
+    padding: 4px 16px;
 }
